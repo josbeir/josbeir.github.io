@@ -64,6 +64,7 @@ header {
 }
 
 .picture {
+  margin: 0 auto;
   width: var(--profilesize);
   overflow: hidden;
   border-radius: calc(var(--profilesize)/2);
@@ -85,6 +86,10 @@ header {
     &:hover {
       mix-blend-mode: normal;
     }
+  }
+
+  @include for-tablet-landscape-down() {
+    --profilesize: 50dvw;
   }
 }
 
@@ -140,17 +145,12 @@ section {
 
   .picture {
     grid-area: v;
-
-    @include for-tablet-landscape-down() {
-      max-width: 50dvw;
-      margin: 0 auto;
-    }
   }
 }
 
 ul.contact {
   list-style-type: none;
-  margin: 3rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   padding: 0;
   display: flex;
   align-items: center;
