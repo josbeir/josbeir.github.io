@@ -1,0 +1,25 @@
+baseURL: 'https://jaspersmet.be/'
+languageCode: 'en-us'
+title: 'Jasper Smet - Freelance Full stack / Drupal developer'
+theme: 'josbeir'
+params:
+  description: "Hi, i'm jasper, your seasoned freelance Full Stack developer based in Belgium. With expertise in PHP, Drupal, and diverse technologies, I bring over 20 years of problem-solving prowess to your projects. Specializing in both front-end and back-end development, let's transform your digital aspirations into vibrant realities together"
+  images:
+    - jasper_avatar.jpg
+  subtitle: 'Full Stack PHP and Drupal developer'
+  social:
+    - icon: linkedin
+      title: LinkedIn
+      url: 'https://www.linkedin.com/in/jaspersmet/'
+      target: '_blank'
+    - icon: github
+      url: 'https://github.com/josbeir'
+      title: Github
+      target: '_blank'
+    - icon: mail
+      url: '#lets-talk'
+      title: Mail
+    - title: Drupal
+      url: 'https://www.drupal.org/u/j0sbeir'
+      class: noicon
+      target: '_blank'

@@ -1,0 +1,15 @@
+{{- define "main" }}
+  {{- range where .Site.Pages.ByWeight "Section" "=" "home" }}
+    {{- if .Content }}
+    <section class="{{ .Title | anchorize }}" id="{{ .Title | anchorize }}">
+      <div class="section-content">
+        {{- if isset .Params "template" }}
+          {{ .Render .Params.template }}
+        {{- else }}
+          {{ .Content }}
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+  {{- end }}
+{{- end }}

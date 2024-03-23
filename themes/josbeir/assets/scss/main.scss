@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+@import 'mixins';
+@import 'reboot';
+@import 'animations';
+@import 'base';
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: var(--color-fourth);
+
+  background: linear-gradient(
+    -45deg,
+    var(--color-first),
+    var(--color-first-dark),
+    var(--color-second)
+  );
+
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  animation: gradient 15s ease infinite;
+
+  @include for-tablet-portrait-down() {
+    font-size: 1rem;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+
+  h1 {
+    margin: 0;
+  }
+
+  .personal-title {
+    font-size: 2rem;
+    margin-left: 2rem;
+    font-weight: 700;
+
+    small {
+      font-size: 1rem;
+      display: block;
+      font-weight: 300;
+    }
+  }
+
+  @include for-tablet-portrait-down() {
+    h1 {
+      font-size: 3.5rem;
+    }
+    .personal-title {
+      font-size: 1.5rem;
+      margin-left: 1.5rem;
+    }
+    .personal-title > small {
+      font-size: .8rem;
+    }
+  }
+}
+
+.picture {
+  width: var(--profilesize);
+  overflow: hidden;
+  border-radius: calc(var(--profilesize)/2);
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(
+    45deg,
+    var(--color-first),
+    var(--color-first-dark),
+    var(--color-first),
+    var(--color-first-dark)
+  );
+
+  background-size: 300% 300%;
+  background-attachment: fixed;
+  animation: gradient 10s ease infinite;
+
+  img {
+    mix-blend-mode:luminosity;
+    &:hover {
+      mix-blend-mode: normal;
+    }
+  }
+}
+
+main {
+  margin: 0 calc(50% - 50dvw);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  height: 100dvh;
+  width: 100dvw;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+section {
+  flex: 0 0;
+  flex-basis: 100%;
+  display: block;
+  scroll-snap-align: start;
+  height: 100dvh;
+  width: 100dvw;
+  position: relative;
+
+  .section-content {
+    max-width: 1400px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: var(--gap);
+  }
+
+
+  &.homepage .section-content {
+    display: grid;
+    align-items: center;
+    gap: var(--gap);
+    grid-template:
+    'v'
+    'c';
+
+    @include for-tablet-landscape-up() {
+      grid-template: 'c c c c c v v v';
+    }
+  }
+
+  .main {
+    grid-area: c;
+  }
+
+  .picture {
+    grid-area: v;
+
+    @include for-tablet-landscape-down() {
+      max-width: 50dvw;
+      margin: 0 auto;
+    }
+  }
+}
+
+ul.contact {
+  list-style-type: none;
+  margin: 3rem 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  > li {
+    margin-right: .8rem;
+  }
+
+  > li > a {
+    color: var(--color-fourth);
+    transition: all .15s ease-in-out;
+    text-decoration: none;
+
+    &:not(.noicon) {
+      height: 30px;
+      display: block;
+    }
+
+    &.noicon {
+      background-color: var(--color-second);
+      border-radius: .2rem;
+      padding: .4rem .5rem;
+      font-size: .8rem;
+      vertical-align: 3px;
+    }
+  }
+
+  > li > a:hover {
+    color: var(--color-third);
+  }
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.form-item {
+  margin: 1rem 0;
+  width: 100%;
+
+  @include for-tablet-portrait-down() {
+    margin: .5rem 0;
+  }
+
+  label {
+    display: block;
+    font-size: 1rem;
+
+    small {
+      color: var(--color-third);
+      padding-left: .5rem;
+    }
+
+    @include for-small-phone-only() {
+      display: none;
+    }
+  }
+
+  textarea,
+  select,
+  input[type="email"],
+  input[type="phone"],
+  input[type="text"] {
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    background-color: var(--color-second);
+    color: var(--color-fourth);
+    padding: .85rem;
+    border-radius: .3rem;
+
+    &:focus {
+      outline: 1px solid var(--color-third);
+      box-shadow: 0 -1px 3rem transparentize($color-third, .8);
+    }
+
+    @include for-tablet-portrait-down() {
+      font-size: 1rem;
+      padding: .5rem;
+    }
+  }
+}
+
+.form-actions {
+  text-align: right;
+
+  button {
+    background-color: var(--color-third);
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: .2rem 1.5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-third-light);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{{- $image := .Page.Resources.GetMatch .Params.image }}
+{{- $image := $image.Process "resize 600x webp" }}
+<div class="main">
+  <header>
+    <h1>{{ .Params.introTitle }}</h1>
+    <div class="personal-title">
+      {{ .Params.titleSecond }}
+      <small>{{ .Params.jobTitle }}</small>
+    </div>
+  </header>
+  {{ .Content }}
+  <ul class="contact">
+    {{- range $.Site.Params.social }}
+    <li>
+      <a href="{{ .url }}" target="{{ .target }}" title="{{ .title }}" class="{{ .class }}">
+        {{- if .icon }}
+          <i data-feather="{{ .icon}}"></i>
+        {{- else }}
+          {{ .title }}
+        {{- end }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- if $image }}
+  <div class="picture">
+    <img loading="eager" src="{{ $image.RelPermalink }}" alt="">
+  </div>
+{{- end }}

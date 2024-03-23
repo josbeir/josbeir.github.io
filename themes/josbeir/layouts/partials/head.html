@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://unpkg.com/feather-icons"></script>
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ template "_internal/opengraph.html" . }}
+{{- partialCached "head/css.html" . }}
+{{- partialCached "head/js.html" . }}

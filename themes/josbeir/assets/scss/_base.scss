@@ -1,0 +1,52 @@
+$color-first: #222831;
+$color-first-dark: darken($color-first, 20%);
+$color-second: #393E46;
+$color-third: #00ADB5;
+$color-third-light: lighten($color-third, 10%);
+
+:root {
+  --color-first: #{$color-first};
+  --color-first-dark: #{$color-first-dark};
+  --color-second: #{$color-second};
+  --color-third: #{$color-third};
+  --color-third-light: #{$color-third-light};
+  --color-fourth: #EEEEEE;
+  --gap: 2rem;
+  --profilesize: 100%;
+}
+
+::placeholder {
+  color: lighten($color-second, 20%);
+  opacity: 0.5;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--color-third);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  transition: color .2s ease-in-out;
+  color: var(--color-third);
+
+  &:link,
+  &:visited {
+    color: var(--color-third);
+  }
+  &:hover {
+    color: var(--color-fourth);
+  }
+}
