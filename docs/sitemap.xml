@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/home/info/</loc>
+    <loc>https://jaspersmet.be/home/info/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jaspersmet.be/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jaspersmet.be/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/</loc>
+    <loc>https://jaspersmet.be/home/</loc>
   </url><url>
-    <loc>http://localhost:1313/home/contact/</loc>
+    <loc>https://jaspersmet.be/home/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jaspersmet.be/tags/</loc>
   </url>
 </urlset>

@@ -51,16 +51,16 @@ header {
 
   @include for-tablet-portrait-down() {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 
     .personal-title {
       font-size: 1.5rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
     }
 
     .personal-title > small {
-      font-size: .8rem;
+      font-size: .7rem;
     }
   }
 }
@@ -91,7 +91,7 @@ header {
   }
 
   @include for-tablet-landscape-down() {
-    --profilesize: 45dvw;
+    --profilesize: 40dvw;
   }
 }
 

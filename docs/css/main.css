@@ -538,12 +538,12 @@ header {
       font-weight: 300; }
   @media (max-width: 600px) {
     header h1 {
-      font-size: 3.5rem; }
+      font-size: 3rem; }
     header .personal-title {
       font-size: 1.5rem;
-      margin-left: 1.5rem; }
+      margin-left: 1rem; }
     header .personal-title > small {
-      font-size: .8rem; } }
+      font-size: .7rem; } }
 .picture {
   margin: 0 auto;
   width: var(--profilesize);
@@ -560,7 +560,7 @@ header {
       mix-blend-mode: normal; }
   @media (max-width: 900px) {
     .picture {
-      --profilesize: 45dvw; } }
+      --profilesize: 40dvw; } }
 main {
   margin: 0 calc(50% - 50dvw);
   overflow-x: scroll;
