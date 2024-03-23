@@ -53,10 +53,12 @@ header {
     h1 {
       font-size: 3.5rem;
     }
+
     .personal-title {
       font-size: 1.5rem;
       margin-left: 1.5rem;
     }
+
     .personal-title > small {
       font-size: .8rem;
     }
@@ -89,7 +91,7 @@ header {
   }
 
   @include for-tablet-landscape-down() {
-    --profilesize: 50dvw;
+    --profilesize: 45dvw;
   }
 }
 

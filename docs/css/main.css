@@ -560,7 +560,7 @@ header {
       mix-blend-mode: normal; }
   @media (max-width: 900px) {
     .picture {
-      --profilesize: 50dvw; } }
+      --profilesize: 45dvw; } }
 main {
   margin: 0 calc(50% - 50dvw);
   overflow-x: scroll;
