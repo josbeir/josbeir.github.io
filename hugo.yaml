@@ -1,4 +1,5 @@
 baseURL: 'https://jaspersmet.be/'
+publishDir: docs/
 languageCode: 'en-us'
 title: 'Jasper Smet - Freelance Full stack / Drupal developer'
 theme: 'josbeir'

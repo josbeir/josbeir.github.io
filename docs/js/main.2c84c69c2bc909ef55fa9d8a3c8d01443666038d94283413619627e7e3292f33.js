@@ -1,0 +1,1 @@
+(()=>{document.addEventListener("DOMContentLoaded",()=>{let n=document.querySelector("main");window.addEventListener("hashchange",()=>{let e=window.location.hash;e||(e="section:first-child");let t=n.querySelector(e);t&&t.scrollIntoView()})});})();
