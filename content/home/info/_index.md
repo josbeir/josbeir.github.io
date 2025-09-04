@@ -9,4 +9,4 @@ titleSecond: I'm Jasper Smet
 jobTitle: Freelance Full stack / Drupal developer
 ---
 
-As a seasoned **Full Stack** developer from Belgium, my expertise spans across **PHP**, **Drupal**, **CakePHP** and an array of other technologies. With more than two decades of hands-on experience, I embody a problem-solving mindset fueled by my unwavering passion for technology. Equally proficient in front-end and back-end development, I stand prepared to harness my skills to actualize your digital initiatives. Let's join forces and transform your concepts into tangible, innovative solutions!
+Hey there! I'm a **Full Stack** developer based in Belgium with a passion for **PHP**, **Drupal**, **CakePHP** and various other technologies. After 20+ years in the field, I've developed a knack for solving problems and love diving into new tech challenges. I work comfortably on both front-end and back-end projects, so whether you need help bringing an idea to life or polishing an existing project, I'm here to help make it happen.
