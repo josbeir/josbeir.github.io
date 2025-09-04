@@ -1,4 +1,4 @@
-baseURL: 'https://jaspersmet.be/'
+baseURL: 'https://www.jaspersmet.be/'
 publishDir: docs/
 languageCode: 'en-us'
 title: 'Jasper Smet - Freelance Full stack / Drupal developer'
