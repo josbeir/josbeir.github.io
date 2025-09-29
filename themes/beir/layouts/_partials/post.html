@@ -1,17 +1,15 @@
 {{ $currentPage := . }}
 <div class="card xl:card-side bg-base-300 shadow-sm mb-4 overflow-hidden">
-    {{- with .Params.image }}
+    {{- with index .Params.images 0 }}
         <figure>
         {{- $imagePath := . }}
         {{- with $currentPage.Resources.GetMatch $imagePath }}
-            {{/* The image is found in the page bundle */}}
             <img src="{{ .RelPermalink }}" alt="{{ $.Title }} Teaser Image" />
         {{- else }}
-            {{/* The image path might be a direct link or from the static folder */}}
             <img src="{{ $imagePath | relURL }}" alt="{{ $.Title }} Teaser Image" />
         {{- end }}
         </figure>
-    {{- end }}        
+    {{- end }}
     <div class="card-body">
         <div class="content">
         <h2 class="text-2xl mb-1"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>

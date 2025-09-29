@@ -1,7 +1,9 @@
 ---
 title: 'The Great CakePHP Doc Migration: From Sphinx to GFM, and the Lesson Learned'
+description: 'A behind-the-scenes look at migrating CakePHP documentation from Sphinx/RST to GitHub Flavored Markdown, the challenges faced, and lessons learned during the conversion process.'
 date: 2025-07-28T09:44:00-07:00
-image: converting-cakephp-rst-docs.png
+images:
+    -  converting-cakephp-rst-docs.png
 draft: false
 tags:
     - CakePHP
