@@ -1,4 +1,3 @@
-{{- partial "google_tag.html" . }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
@@ -14,3 +13,5 @@
 {{- partialCached "head/js.html" . }}
 {{- partial "opengraph.html" . }}
 {{- partial "schema.html" . }}
+<!-- 100% privacy-first analytics -->
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

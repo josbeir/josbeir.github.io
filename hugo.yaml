@@ -31,5 +31,3 @@ caches:
 params:
   subtitle: Freelance Full Stack Developer
   description: Belgium-based developer specializing in web development, Drupal, CakePHP, and open source projects.
-  services:
-    google_tag_manager_id: GTM-NDCL7945
